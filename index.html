@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML-CSS</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">Logo</a>
+        <input class="menu__btn" type="checkbox" id="menu-btn" />
+        <label class="menu__icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+              <a href="#carousel__slide4" class="carousel__prev"
+                >Go to last slide</a
+              >
+              <a href="#carousel__slide2" class="carousel__next"
+                >Go to next slide</a
+              >
+            </div>
+          </li>
+          <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide3" class="carousel__next"
+              >Go to next slide</a
+            >
+          </li>
+          <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide4" class="carousel__next"
+              >Go to next slide</a
+            >
+          </li>
+          <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide1" class="carousel__next"
+              >Go to first slide</a
+            >
+          </li>
+        </ol>
+      </section>
+      <section id="watch">
+        <div class="watch__items">
+          <a class="watch__btn" href="#open-modal">
+            Watch the best Technology in Action
+          </a>
+        </div>
+        <div id="open-modal" class="modal-window">
+            <div>
+              <a href="#" title="Close" class="modal-close">X</a>
+              <iframe id="player" type="text/html" width="100%" height="100%"
+              src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
+              frameborder="0"></iframe>
+            </div>
+          </div>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>
